@@ -68,3 +68,13 @@ section[id] {
 .pub-buttons {
     margin-top: 0.75rem;
 }
+
+.inline-link {
+    color: #2b6cb0;
+    border-bottom: 1px solid rgba(43, 108, 176, 0.35);
+}
+
+.inline-link:hover {
+    color: #1a4f8b;
+    border-bottom-color: currentColor;
+}

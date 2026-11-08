@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Naser Kazemi - Academic Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Naser Kazemi - M.Sc. Computer Science student at EPFL working on world models, generative video, reinforcement learning and robot learning.">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.bundle.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -13,30 +16,33 @@
 <body>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <div class="navbar-item is-hidden-desktop">
-                <a href="https://github.com/naser-kazemi" class="icon is-large has-text-light">
-                    <i class="fab fa-2x fa-github"></i>
-                </a>
-            </div>
+            <a class="navbar-item has-text-weight-bold" href="#top">Naser Kazemi</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-        <div class="navbar-menu">
+        <div id="mainNav" class="navbar-menu">
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <a href="https://github.com/naser-kazemi" class="icon is-large has-text-light">
-                        <i class="fab fa-2x fa-github"></i>
-                    </a>
-                </div>
+                <a class="navbar-item" href="#about">About</a>
+                <a class="navbar-item" href="#research">Research</a>
+                <a class="navbar-item" href="#publications">Publications</a>
+                <a class="navbar-item" href="#teaching">Teaching</a>
+                <a class="navbar-item" href="#projects">Projects</a>
+                <a class="navbar-item" href="#hobbies">Hobbies</a>
+                <a class="navbar-item" href="docs/CV.pdf">CV</a>
             </div>
         </div>
     </nav>
 
-    <section class="hero is-primary">
+    <section class="hero is-primary" id="top">
         <div class="hero-body">
             <div class="container">
                 <div class="level">
                     <div class="level-item has-text-centered">
                         <figure class="image is-128x128">
-                            <img class="is-rounded" src="img/me-big.jpg">
+                            <img class="is-rounded" src="img/me-big.jpg" alt="Naser Kazemi">
                         </figure>
                     </div>
                 </div>
@@ -46,14 +52,25 @@
                             Naser Kazemi
                         </h1>
                         <h2 class="subtitle">
-                            Computer Engineering Student, Sharif University of Technology, Tehran, Iran
+                            M.Sc. in Computer Science @ EPFL &middot; Lausanne, Switzerland<br>
+                            World Models, Generative Video, Reinforcement Learning &amp; Robotics
                         </h2>
                         <div class="icon-links">
-                            <a href="docs/CV.pdf" class="icon has-text-light">
-                                <i class="fas fa-file-word"></i> <strong>CV</strong>
+                            <a href="docs/CV.pdf" class="has-text-light" title="CV">
+                                <i class="fas fa-file-alt"></i> <strong>CV</strong>
                             </a>
-                            <a href="https://scholar.google.com/citations?user=pJu9XeoAAAAJ&hl=en">
+                            <a href="https://scholar.google.com/citations?user=pJu9XeoAAAAJ&hl=en" title="Google Scholar">
                                 <img src="img/google-scholar.svg" alt="Google Scholar" class="icon-image">
+                            </a>
+                            <a href="https://github.com/naser-kazemi" class="has-text-light" title="GitHub">
+                                <i class="fab fa-lg fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/naser-kazemi-6b833a21a/" class="has-text-light"
+                                title="LinkedIn">
+                                <i class="fab fa-lg fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:naser.kazemi@epfl.ch" class="has-text-light" title="Email">
+                                <i class="fas fa-lg fa-envelope"></i>
                             </a>
                         </div>
                     </div>
@@ -62,19 +79,29 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <h1 class="title">About Me</h1>
             <hr />
-            <p>I am a final-year Computer Engineering student at Sharif University of Technology, minoring in Applied
-                Mathematics. My focus is on Machine Learning, especially Foundation Models, specifically World Models,
-                and Reinforcement Learning. Over the past two
-                summers, I have completed two research internships. The latest was at INSAIT in Sofia, under the
-                supervision of Prof. Danda Paudel and Prof. Luc Van Gool, where I focused on developing World Models for
-                interactive video generation. The other internship was at the Max Planck Institute for Informatics,
-                supervised by
-                Prof. Vahid Babaie, where I worked on multi-objective optimization.
-
+            <p>
+                I am an M.Sc. student in Computer Science at <strong>EPFL</strong>, specializing in AI and Data
+                Science. My research asks how agents can <strong>learn useful world models and act on
+                    them</strong>. It spans <strong>generative video world models</strong>,
+                <strong>reinforcement learning</strong> and <strong>robot learning</strong>.
+            </p>
+            <p>
+                At <strong>INSAIT</strong>, with Prof. Luc Van Gool and Prof. Danda Paudel, I built GenieRedux, an
+                open-source implementation of DeepMind's Genie. We then trained it on data collected by RL agents
+                instead of human demonstrations. This led to papers at NeurIPS 2025, CVPR 2025 and a NeurIPS 2024
+                workshop. Since February 2026, I have been a research intern with Prof. Glen Berseth at
+                <strong>Mila</strong>, working on causal world models that tell apart what the agent causes from
+                what the environment does on its own. Since August 2026, I have also worked with Prof. Aude
+                Billard at EPFL's <strong>LASA</strong> lab on constraint learning that transfers across different
+                robots. I hold a B.Sc. in Computer Engineering from Sharif University of Technology, with a minor
+                in Applied Mathematics.
+            </p>
+            <p>
+                I am looking for <strong>research internships for 2027</strong>.
             </p>
         </div>
     </section>
@@ -86,63 +113,205 @@
             <div class="card">
                 <div class="card-content">
                     <div class="content">
-                        <p class="title is-4">Sharif University of Technology</p>
-                        <p class="subtitle is-6">B.Sc. in Computer Engineering (2020 - Present)</p>
-                        <p class="subtitle is-6">Minor in Applied Mathematical Science (2021 - Present)</p>
-                        <p>Major GPA: 19.72, Overall GPA: 19.27/20</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Research Projects</h1>
-            <hr />
-            <div class="card">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="img/insait.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Interactive Video Generation and World Models</p>
-                            <p>INSAIT, Sofia, Bulgaria (2024)</p>
-                            <p>Supervised by Prof. Luc Van Gool & Prof. Danda Paudel</p>
-                            <p>
-                            <div style="display: flex; align-items: center;">
-                                <a href="https://nsavov.github.io/GenieRedux/" class="has-text-primary"
-                                    style="display: flex; align-items: center; margin-right: 20px;">
-                                    <!-- <p style="margin: 0;">Project Page</p> -->
-                                    <i class="fas fa-link"></i>
-                                    <strong style="vertical-align: middle; margin-left: 5px;">Project Page</strong>
-                                </a>
-                            </div>
-                            </p>
-                            <figure class="image is-16by16">
-                                <img src="img/genie.gif" alt="Interactive Video Generation and World Models Demo">
-                            </figure>
-                        </div>
+                        <p class="title is-4">École polytechnique fédérale de Lausanne (EPFL)</p>
+                        <p class="subtitle is-6">M.Sc. in Computer Science, AI and Data Science Specialization (Sep.
+                            2025 &ndash; Expected Jul. 2027)</p>
+                        <p>GPA: 5.85/6</p>
                     </div>
                 </div>
             </div>
             <div class="card card-gap">
                 <div class="card-content">
+                    <div class="content">
+                        <p class="title is-4">Sharif University of Technology</p>
+                        <p class="subtitle is-6">B.Sc. in Computer Engineering, Minor in Applied Mathematical Science
+                            (2020 &ndash; 2025)</p>
+                        <p>Overall GPA: 19.17/20, Major GPA: 19.75/20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="research">
+        <div class="container">
+            <h1 class="title">Research Experience</h1>
+            <hr />
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="logo-badge"><i class="fas fa-robot"></i></span>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Cross-Embodiment Constraint Learning in Robotics</p>
+                            <p>EPFL &ndash; Learning Algorithms and Systems Laboratory (LASA), Lausanne, Switzerland
+                                (Aug. 2026 &ndash; Present)</p>
+                            <p>Supervised by Prof. Aude Billard</p>
+                            <p class="entry-desc">
+                                Developing a constraint learning framework that separates environment constraints
+                                (such as obstacles) from each robot's own kinematic and dynamic limits, using
+                                demonstrations from different robots. The goal is zero-shot transfer of constraints
+                                to new robot bodies, in simulation and on real Franka Emika and KUKA arms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-gap">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="logo-badge"><i class="fas fa-brain"></i></span>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Causal World Models for Reinforcement Learning</p>
+                            <p>Mila &ndash; Quebec AI Institute, Montréal, Canada (Feb. 2026 &ndash; Present)</p>
+                            <p>Supervised by Prof. Glen Berseth</p>
+                            <p class="entry-desc">
+                                Building causal world models that separate what the agent causes from what the
+                                environment does on its own, in procedurally generated RL environments. In Craftax,
+                                using event-aware world models, I built a counterfactual pipeline that branches the
+                                model's imagined rollouts under action interventions and checks them against the
+                                exact simulator outcomes. I am now using it to train attribution heads that assign
+                                each event to the agent or the environment, which targets the credit assignment
+                                problem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-gap">
+                <div class="card-content">
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="img/max-planck.png" alt="Placeholder image">
+                                <img src="img/insait.png" alt="INSAIT logo">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Interactive Video Generation and World Models</p>
+                            <p>INSAIT, Sofia, Bulgaria (Mar. 2024 &ndash; Aug. 2025)</p>
+                            <p>Supervised by Prof. Luc Van Gool &amp; Prof. Danda Paudel</p>
+                            <div class="content entry-desc">
+                                <ul>
+                                    <li>Built and open-sourced <strong>GenieRedux</strong>, a full PyTorch
+                                        implementation of the Genie world model (spatiotemporal transformer
+                                        tokenizer, latent action model and MaskGIT dynamics), and extended it with
+                                        trained RL
+                                        agents for data collection (NeurIPS 2024 D3S3 Workshop, first author).</li>
+                                    <li>Co-designed an uncertainty-driven exploration framework for training
+                                        multi-environment world models without action demonstrations or
+                                        environment rewards, improving video fidelity by up to 6.7 PSNR (CVPR
+                                        2025).</li>
+                                    <li>Designed <strong>StateSpaceDiffuser</strong>, which adds Mamba state-space
+                                        memory to diffusion world models, improving long-horizon PSNR by 25% over
+                                        diffusion-only baselines (NeurIPS 2025).</li>
+                                </ul>
+                            </div>
+                            <div class="link-row">
+                                <a href="https://insait-institute.github.io/GenieRedux/" class="has-text-primary">
+                                    <i class="fas fa-link"></i> <strong>Project Page</strong>
+                                </a>
+                                <a href="https://github.com/insait-institute/GenieRedux" class="has-text-primary">
+                                    <i class="fab fa-github"></i> <strong>Code</strong>
+                                </a>
+                            </div>
+                            <figure class="image">
+                                <img src="img/genie.gif" alt="GenieRedux interactive video generation demo">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-gap">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="img/max-planck.png" alt="Max Planck Institute logo">
                             </figure>
                         </div>
                         <div class="media-content">
                             <p class="title is-4">Multi-Objective Optimization Evolutionary Algorithms</p>
-                            <p>Max Planck Institutes, Saarbrücken (2023)</p>
-                            <p>Supervised by Prof. Vahid Babaie</p>
+                            <p>Max Planck Institute for Informatics, Saarbrücken, Germany (Jul. 2023 &ndash; Sep.
+                                2023)</p>
+                            <p>Supervised by Prof. Vahid Babaei</p>
+                            <p class="entry-desc">
+                                Improved solution diversity in multi-objective optimization (NSGA-II, NSGA-III and
+                                related algorithms) with a Monte Carlo method that randomly segments the objective
+                                space and applies custom sorting.
+                            </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="publications">
+        <div class="container">
+            <h1 class="title">Publications</h1>
+            <hr />
+            <div class="content">
+                <ol class="pub-list">
+                    <li>
+                        <strong>StateSpaceDiffuser: Bringing Long-Context Content to Diffusion World Models</strong><br>
+                        Nedko Savov, <u>Naser Kazemi</u>, Deheng Zhang, Danda Pani Paudel, Xi Wang, Luc Van Gool<br>
+                        <em>NeurIPS 2025</em> &middot;
+                        <a class="has-text-primary" href="https://arxiv.org/abs/2505.22246">arXiv</a>
+                    </li>
+                    <li>
+                        <strong>Exploration-Driven Generative Interactive Environments</strong><br>
+                        Nedko Savov, <u>Naser Kazemi</u>, Mohammad Mahdi, Danda Pani Paudel, Xi Wang, Luc Van Gool<br>
+                        <em>CVPR 2025</em> &middot;
+                        <a class="has-text-primary" href="https://arxiv.org/abs/2504.02515">arXiv</a> &middot;
+                        <a class="has-text-primary" href="https://insait-institute.github.io/GenieRedux/">Webpage</a>
+                    </li>
+                    <li>
+                        <strong>Learning Generative Interactive Environments by Trained Agent Exploration</strong><br>
+                        <u>Naser Kazemi</u>, Nedko Savov, Danda Pani Paudel, Luc Van Gool<br>
+                        <em>NeurIPS 2024 Workshop (D3S3)</em> &middot;
+                        <a class="has-text-primary" href="https://arxiv.org/abs/2409.06445">arXiv</a> &middot;
+                        <a class="has-text-primary" href="https://nsavov.github.io/GenieRedux/">Webpage</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="teaching">
+        <div class="container">
+            <h1 class="title">Teaching</h1>
+            <hr />
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title is-4">Teaching Assistant, EPFL</p>
+                        <p class="subtitle is-6">School of Computer and Communication Sciences (Feb. 2026 &ndash;
+                            Present)</p>
+                        <ul>
+                            <li>Intelligent Systems: Communications &amp; AI (COM-304)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-gap">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title is-4">Head Teaching Assistant &amp; Teaching Assistant, Sharif University of
+                            Technology</p>
+                        <p class="subtitle is-6">Department of Computer Engineering (Sep. 2021 &ndash; Jun. 2024)</p>
+                        <ul>
+                            <li><strong>Linear Algebra</strong> &ndash; Head TA, led a team of 20+ TAs</li>
+                            <li><strong>Game Theory</strong> &ndash; Head TA, led a team of 10+ TAs</li>
+                            <li>TA for Machine Learning, Convex Optimization, Probability &amp; Statistics, and Data
+                                Structures &amp; Algorithms</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -151,34 +320,88 @@
 
     <section class="section">
         <div class="container">
-            <h1 class="title">Courses Taken</h1>
+            <h1 class="title">Awards and Honors</h1>
             <hr />
             <div class="content">
-                <p class="subtitle is-5">Core Courses</p>
                 <ul>
-                    <li>Reinforcement Learning</li>
-                    <li>Convex Optimization</li>
-                    <li>Information Theory</li>
-                    <li>High Dimensional Probability</li>
-                    <li>Mathematical Analysis I</li>
-                    <li>Algebra I</li>
-                    <li>Combinatorics</li>
-                    <li>Game Theory</li>
-                </ul>
-                <p class="subtitle is-5">Additional Courses</p>
-                <ul>
-                    <li>Functional Programming Principles in Scala - Coursera (EPFL), <a class="has-text-primary"
-                            href="https://www.coursera.org/account/accomplishments/verify/TD7QEG6SQMWG">Link</a></li>
-                    <li>Functional Program Design in Scala - Coursera (EPFL), <a class="has-text-primary"
-                            href="https://www.coursera.org/account/accomplishments/verify/DR7YZMYGNVWH">Link</a></li>
-                    <li>Data Analytics Bootcamp - University of Tehran, <a class="has-text-primary"
-                            href="https://drive.google.com/file/d/1xaQZljVeWpdbHXPqMwTtBrqVMlphyo14/view">Link</a></li>
-
+                    <li><strong>Iranian National University Entrance Exam:</strong> ranked 5th among ~150,000
+                        candidates (top 0.003%), 2020</li>
+                    <li><strong>European Mathematical Cup:</strong> Gold Medal, 2018</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <section class="section" id="projects">
+        <div class="container">
+            <h1 class="title">Selected Projects</h1>
+            <hr />
+            <div class="content">
+                <ul>
+                    <li><strong>GenieRedux</strong> (PyTorch): open-source implementation of the Genie world model.
+                        <a class="has-text-primary" href="https://github.com/insait-institute/GenieRedux">GitHub</a>
+                    </li>
+                    <li><strong>End-to-End Discrete Concept Discovery</strong> (PyTorch): Vis2Sym, connecting visual
+                        perception and symbolic reasoning through vector quantization.
+                        <a class="has-text-primary" href="https://github.com/naser-kazemi/e2e-dcd">GitHub</a>
+                    </li>
+                    <li><strong>Reinforcement Learning Course</strong> (PyTorch): practical and theoretical
+                        assignments.
+                        <a class="has-text-primary"
+                            href="https://github.com/naser-kazemi/Reinforcement-Learning-Course">GitHub</a>
+                    </li>
+                    <li><strong>Convex Optimization Algorithms</strong> (CVXPY).
+                        <a class="has-text-primary" href="https://github.com/naser-kazemi/Convex-Optimization">GitHub</a>
+                    </li>
+                    <li><strong>Massive Data Algorithms</strong> (PySpark): distributed streaming, graph analysis and
+                        high-dimensional clustering.
+                        <a class="has-text-primary"
+                            href="https://github.com/naser-kazemi/Massive-Data-Analysis">GitHub</a>
+                    </li>
+                    <li><strong>C-Minus Compiler</strong> (Python): lexer, parser, semantic analyzer and code
+                        generator for a subset of C.
+                        <a class="has-text-primary"
+                            href="https://github.com/naser-kazemi/Compiler-Project-Spring-2023">GitHub</a>
+                    </li>
+                    <li><strong>Rope Motion Simulation</strong> (Verilog, C++): hardware-accelerated physics
+                        simulation.
+                        <a class="has-text-primary"
+                            href="https://github.com/naser-kazemi/Rope-Simulation-DSD-Project">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Courses</h1>
+            <hr />
+            <div class="content">
+                <p class="subtitle is-5">Selected Courses</p>
+                <ul class="two-col">
+                    <li>Reinforcement Learning</li>
+                    <li>Convex Optimization</li>
+                    <li>Advanced Probability</li>
+                    <li>Information Theory</li>
+                    <li>High-Dimensional Probability</li>
+                    <li>Mathematical Analysis I</li>
+                    <li>Algebra I</li>
+                    <li>Game Theory</li>
+                    <li>Topology</li>
+                </ul>
+                <p class="subtitle is-5">Online Courses</p>
+                <ul>
+                    <li>Functional Programming Principles in Scala - Coursera (EPFL), <a class="has-text-primary"
+                            href="https://www.coursera.org/account/accomplishments/verify/TD7QEG6SQMWG">Certificate</a>
+                    </li>
+                    <li>Functional Program Design in Scala - Coursera (EPFL), <a class="has-text-primary"
+                            href="https://www.coursera.org/account/accomplishments/verify/DR7YZMYGNVWH">Certificate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section class="section">
         <div class="container">
@@ -187,23 +410,14 @@
             <div class="card">
                 <div class="card-content">
                     <div class="content">
-                        <p class="title is-4">Programming Languages</p>
-                        <ul>
-                            <li>Java, C/C++, Python, Scala, Julia, CUDA, R</li>
-                        </ul>
-                        <p class="title is-4">Libraries & Frameworks</p>
-                        <ul>
-                            <li>PyTorch, Scikit-Learn, TensorFlow, Jax, DEAP, Hadoop, Spark, Kafka, InfluxDB, Django
-                            </li>
-                        </ul>
-                        <p class="title is-4">Tools</p>
-                        <ul>
-                            <li>Linux, Xlinx, LATEX, Docker</li>
-                        </ul>
-                        <p class="title is-4">Languages</p>
-                        <ul>
-                            <li>Persian (Native), English (Fluent)</li>
-                        </ul>
+                        <p class="title is-5">Programming</p>
+                        <p>Python, C/C++, CUDA, Java, Scala, R</p>
+                        <p class="title is-5">ML &amp; Data</p>
+                        <p>PyTorch, JAX, TensorFlow, scikit-learn, Spark, CVXPY</p>
+                        <p class="title is-5">Robotics &amp; Tools</p>
+                        <p>Franka Emika, KUKA IIWA, ROS 2, Isaac Sim, MuJoCo, Linux, Git, Docker, Slurm, W&amp;B</p>
+                        <p class="title is-5">Languages</p>
+                        <p>Persian (Native), English (IELTS 8.0)</p>
                     </div>
                 </div>
             </div>
@@ -215,36 +429,81 @@
             <h1 class="title">Volunteer Service</h1>
             <hr />
             <div class="content">
-                <p>I served as a Central Member of the Student Scientific Chapter at the Computer Engineering
-                    Department,
-                    Sharif University of Technology, from July 2022 to September 2023.</p>
+                <ul>
+                    <li><strong>Central Member</strong>, Student Scientific Chapter, Computer Engineering Department,
+                        Sharif University of Technology (Jul. 2022 &ndash; Sep. 2023)</li>
+                    <li><strong>Writer</strong>, Rayanesh Student Journal, Sharif University of Technology (2021
+                        &ndash; present)</li>
+                    <li><strong>Executive Staff</strong>, ICPC 2023, Sharif University of Technology (Jun. 2024)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="hobbies">
+        <div class="container">
+            <h1 class="title">Beyond Research</h1>
+            <hr />
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-half-tablet is-full-mobile">
+                    <div class="hobby">
+                        <span class="hobby-icon"><i class="fas fa-running"></i></span>
+                        <div>
+                            <p class="title is-5">Running</p>
+                            <p>I run regularly. It is how I clear my head between experiments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-tablet is-full-mobile">
+                    <div class="hobby">
+                        <span class="hobby-icon"><i class="fas fa-dumbbell"></i></span>
+                        <div>
+                            <p class="title is-5">Calisthenics</p>
+                            <p>I train calisthenics, building strength and skills with bodyweight training.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <footer class="footer">
-        <div class="columns is-centered">
-            <div class="column has-text-centered" style="margin-left: 200px; margin-right: 5px;">
-                <a href="https://github.com/naser-kazemi" target="_blank" class="icon has-text-primary">
-                    <i class="fab fa-github"></i> <strong>Github</strong>
-                </a>
-            </div>
-            <div class="column has-text-centered">
-                <a href="https://www.linkedin.com/in/naser-kazemi-6b833a21a/" target="_blank"
-                    class="icon has-text-primary">
-                    <i class="fab fa-linkedin"></i> <strong>LinkedIn</strong>
-                </a>
-            </div>
-            <div class="column has-text-centered" style="margin-left: 5px; margin-right: 200px;">
-                <a href="mailto:naser.kazemi2002@gmail.com" target="_blank" class="icon has-text-primary">
-                    <i class="fas fa-envelope"></i> <strong>Email</strong>
-                </a>
-            </div>
+        <div class="footer-links">
+            <a href="https://github.com/naser-kazemi" target="_blank" class="has-text-primary">
+                <i class="fab fa-github"></i> <strong>GitHub</strong>
+            </a>
+            <a href="https://scholar.google.com/citations?user=pJu9XeoAAAAJ&hl=en" target="_blank"
+                class="has-text-primary">
+                <i class="fas fa-graduation-cap"></i> <strong>Google Scholar</strong>
+            </a>
+            <a href="https://www.linkedin.com/in/naser-kazemi-6b833a21a/" target="_blank" class="has-text-primary">
+                <i class="fab fa-linkedin"></i> <strong>LinkedIn</strong>
+            </a>
+            <a href="mailto:naser.kazemi@epfl.ch" class="has-text-primary">
+                <i class="fas fa-envelope"></i> <strong>naser.kazemi@epfl.ch</strong>
+            </a>
         </div>
     </footer>
 
     <script src="js/bundle.js"></script>
+    <script>
+        // Mobile navbar toggle, and close the menu after picking a section
+        document.querySelectorAll('.navbar-burger').forEach(function (burger) {
+            var menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+                burger.setAttribute('aria-expanded', burger.classList.contains('is-active'));
+            });
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    burger.classList.remove('is-active');
+                    menu.classList.remove('is-active');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

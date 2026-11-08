@@ -26,7 +26,6 @@
         <div id="mainNav" class="navbar-menu">
             <div class="navbar-end">
                 <a class="navbar-item" href="#about">About</a>
-                <a class="navbar-item" href="#research">Research</a>
                 <a class="navbar-item" href="#publications">Publications</a>
                 <a class="navbar-item" href="#teaching">Teaching</a>
                 <a class="navbar-item" href="#projects">Projects</a>
@@ -90,10 +89,8 @@
                 <strong>reinforcement learning</strong> and <strong>robot learning</strong>.
             </p>
             <p>
-                At <strong>INSAIT</strong>, with Prof. Luc Van Gool and Prof. Danda Paudel, I built GenieRedux, an
-                open-source implementation of DeepMind's Genie. We then trained it on data collected by RL agents
-                instead of human demonstrations. This led to papers at NeurIPS 2025, CVPR 2025 and a NeurIPS 2024
-                workshop. Since February 2026, I have been a research intern with Prof. Glen Berseth at
+                At <strong>INSAIT</strong>, with Prof. Luc Van Gool and Prof. Danda Paudel, I worked on world models
+                for interactive video generation. Since February 2026, I have been a research intern with Prof. Glen Berseth at
                 <strong>Mila</strong>, working on causal world models that tell apart what the agent causes from
                 what the environment does on its own. Since August 2026, I have also worked with Prof. Aude
                 Billard at EPFL's <strong>LASA</strong> lab on constraint learning that transfers across different
@@ -115,7 +112,7 @@
                     <div class="content">
                         <p class="title is-4">École polytechnique fédérale de Lausanne (EPFL)</p>
                         <p class="subtitle is-6">M.Sc. in Computer Science, AI and Data Science Specialization (Sep.
-                            2025 &ndash; Expected Jul. 2027)</p>
+                            2025 &ndash; Present)</p>
                         <p>GPA: 5.85/6</p>
                     </div>
                 </div>
@@ -133,153 +130,104 @@
         </div>
     </section>
 
-    <section class="section" id="research">
-        <div class="container">
-            <h1 class="title">Research Experience</h1>
-            <hr />
-
-            <div class="card">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="logo-badge"><i class="fas fa-robot"></i></span>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Cross-Embodiment Constraint Learning in Robotics</p>
-                            <p>EPFL &ndash; Learning Algorithms and Systems Laboratory (LASA), Lausanne, Switzerland
-                                (Aug. 2026 &ndash; Present)</p>
-                            <p>Supervised by Prof. Aude Billard</p>
-                            <p class="entry-desc">
-                                Developing a constraint learning framework that separates environment constraints
-                                (such as obstacles) from each robot's own kinematic and dynamic limits, using
-                                demonstrations from different robots. The goal is zero-shot transfer of constraints
-                                to new robot bodies, in simulation and on real Franka Emika and KUKA arms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-gap">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="logo-badge"><i class="fas fa-brain"></i></span>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Causal World Models for Reinforcement Learning</p>
-                            <p>Mila &ndash; Quebec AI Institute, Montréal, Canada (Feb. 2026 &ndash; Present)</p>
-                            <p>Supervised by Prof. Glen Berseth</p>
-                            <p class="entry-desc">
-                                Building causal world models that separate what the agent causes from what the
-                                environment does on its own, in procedurally generated RL environments. In Craftax,
-                                using event-aware world models, I built a counterfactual pipeline that branches the
-                                model's imagined rollouts under action interventions and checks them against the
-                                exact simulator outcomes. I am now using it to train attribution heads that assign
-                                each event to the agent or the environment, which targets the credit assignment
-                                problem.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-gap">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="img/insait.png" alt="INSAIT logo">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Interactive Video Generation and World Models</p>
-                            <p>INSAIT, Sofia, Bulgaria (Mar. 2024 &ndash; Aug. 2025)</p>
-                            <p>Supervised by Prof. Luc Van Gool &amp; Prof. Danda Paudel</p>
-                            <div class="content entry-desc">
-                                <ul>
-                                    <li>Built and open-sourced <strong>GenieRedux</strong>, a full PyTorch
-                                        implementation of the Genie world model (spatiotemporal transformer
-                                        tokenizer, latent action model and MaskGIT dynamics), and extended it with
-                                        trained RL
-                                        agents for data collection (NeurIPS 2024 D3S3 Workshop, first author).</li>
-                                    <li>Co-designed an uncertainty-driven exploration framework for training
-                                        multi-environment world models without action demonstrations or
-                                        environment rewards, improving video fidelity by up to 6.7 PSNR (CVPR
-                                        2025).</li>
-                                    <li>Designed <strong>StateSpaceDiffuser</strong>, which adds Mamba state-space
-                                        memory to diffusion world models, improving long-horizon PSNR by 25% over
-                                        diffusion-only baselines (NeurIPS 2025).</li>
-                                </ul>
-                            </div>
-                            <div class="link-row">
-                                <a href="https://insait-institute.github.io/GenieRedux/" class="has-text-primary">
-                                    <i class="fas fa-link"></i> <strong>Project Page</strong>
-                                </a>
-                                <a href="https://github.com/insait-institute/GenieRedux" class="has-text-primary">
-                                    <i class="fab fa-github"></i> <strong>Code</strong>
-                                </a>
-                            </div>
-                            <figure class="image">
-                                <img src="img/genie.gif" alt="GenieRedux interactive video generation demo">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-gap">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="img/max-planck.png" alt="Max Planck Institute logo">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Multi-Objective Optimization Evolutionary Algorithms</p>
-                            <p>Max Planck Institute for Informatics, Saarbrücken, Germany (Jul. 2023 &ndash; Sep.
-                                2023)</p>
-                            <p>Supervised by Prof. Vahid Babaei</p>
-                            <p class="entry-desc">
-                                Improved solution diversity in multi-objective optimization (NSGA-II, NSGA-III and
-                                related algorithms) with a Monte Carlo method that randomly segments the objective
-                                space and applies custom sorting.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="section" id="publications">
         <div class="container">
             <h1 class="title">Publications</h1>
             <hr />
-            <div class="content">
-                <ol class="pub-list">
-                    <li>
-                        <strong>StateSpaceDiffuser: Bringing Long-Context Content to Diffusion World Models</strong><br>
-                        Nedko Savov, <u>Naser Kazemi</u>, Deheng Zhang, Danda Pani Paudel, Xi Wang, Luc Van Gool<br>
-                        <em>NeurIPS 2025</em> &middot;
-                        <a class="has-text-primary" href="https://arxiv.org/abs/2505.22246">arXiv</a>
-                    </li>
-                    <li>
-                        <strong>Exploration-Driven Generative Interactive Environments</strong><br>
-                        Nedko Savov, <u>Naser Kazemi</u>, Mohammad Mahdi, Danda Pani Paudel, Xi Wang, Luc Van Gool<br>
-                        <em>CVPR 2025</em> &middot;
-                        <a class="has-text-primary" href="https://arxiv.org/abs/2504.02515">arXiv</a> &middot;
-                        <a class="has-text-primary" href="https://insait-institute.github.io/GenieRedux/">Webpage</a>
-                    </li>
-                    <li>
-                        <strong>Learning Generative Interactive Environments by Trained Agent Exploration</strong><br>
-                        <u>Naser Kazemi</u>, Nedko Savov, Danda Pani Paudel, Luc Van Gool<br>
-                        <em>NeurIPS 2024 Workshop (D3S3)</em> &middot;
-                        <a class="has-text-primary" href="https://arxiv.org/abs/2409.06445">arXiv</a> &middot;
-                        <a class="has-text-primary" href="https://nsavov.github.io/GenieRedux/">Webpage</a>
-                    </li>
-                </ol>
+            <div class="card pub-card">
+                <div class="card-content">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <a href="https://insait-institute.github.io/StateSpaceDiffuser/">
+                                <img class="pub-thumb" loading="lazy"
+                                    src="https://insait-institute.github.io/StateSpaceDiffuser/static/images/teaser.png"
+                                    alt="StateSpaceDiffuser teaser">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5">
+                                <a href="https://insait-institute.github.io/StateSpaceDiffuser/">StateSpaceDiffuser:
+                                    Bringing Long Context to Diffusion World Models</a>
+                            </p>
+                            <p>Nedko Savov, <u>Naser Kazemi</u>, Deheng Zhang, Danda Pani Paudel, Xi Wang, Luc Van
+                                Gool</p>
+                            <p><em>NeurIPS 2025</em></p>
+                            <div class="buttons pub-buttons">
+                                <a class="button is-small is-primary"
+                                    href="https://insait-institute.github.io/StateSpaceDiffuser/"><i
+                                        class="fas fa-globe"></i>&nbsp;Project Page</a>
+                                <a class="button is-small is-light" href="https://arxiv.org/abs/2505.22246"><i
+                                        class="fas fa-file-pdf"></i>&nbsp;arXiv</a>
+                                <a class="button is-small is-light"
+                                    href="https://github.com/insait-institute/StateSpaceDiffuser"><i
+                                        class="fab fa-github"></i>&nbsp;Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card pub-card card-gap">
+                <div class="card-content">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <a href="https://insait-institute.github.io/GenieRedux/">
+                                <img class="pub-thumb" loading="lazy"
+                                    src="https://insait-institute.github.io/GenieRedux/static/images/teaserv2.png"
+                                    alt="Exploration-Driven Generative Interactive Environments teaser">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5">
+                                <a href="https://insait-institute.github.io/GenieRedux/">Exploration-Driven Generative
+                                    Interactive Environments</a>
+                            </p>
+                            <p>Nedko Savov, <u>Naser Kazemi</u>, Mohammad Mahdi, Danda Pani Paudel, Xi Wang, Luc Van
+                                Gool</p>
+                            <p><em>CVPR 2025</em></p>
+                            <div class="buttons pub-buttons">
+                                <a class="button is-small is-primary"
+                                    href="https://insait-institute.github.io/GenieRedux/"><i
+                                        class="fas fa-globe"></i>&nbsp;Project Page</a>
+                                <a class="button is-small is-light" href="https://arxiv.org/abs/2504.02515"><i
+                                        class="fas fa-file-pdf"></i>&nbsp;arXiv</a>
+                                <a class="button is-small is-light"
+                                    href="https://github.com/insait-institute/GenieRedux"><i
+                                        class="fab fa-github"></i>&nbsp;Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card pub-card card-gap">
+                <div class="card-content">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <a href="https://nsavov.github.io/GenieRedux/">
+                                <img class="pub-thumb" loading="lazy" src="img/genie.gif"
+                                    alt="GenieRedux interactive video generation demo">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5">
+                                <a href="https://nsavov.github.io/GenieRedux/">Learning Generative Interactive
+                                    Environments by Trained Agent Exploration</a>
+                            </p>
+                            <p><u>Naser Kazemi</u>, Nedko Savov, Danda Pani Paudel, Luc Van Gool</p>
+                            <p><em>NeurIPS 2024 Workshop (D3S3)</em></p>
+                            <div class="buttons pub-buttons">
+                                <a class="button is-small is-primary" href="https://nsavov.github.io/GenieRedux/"><i
+                                        class="fas fa-globe"></i>&nbsp;Project Page</a>
+                                <a class="button is-small is-light" href="https://arxiv.org/abs/2409.06445"><i
+                                        class="fas fa-file-pdf"></i>&nbsp;arXiv</a>
+                                <a class="button is-small is-light"
+                                    href="https://github.com/insait-institute/GenieRedux"><i
+                                        class="fab fa-github"></i>&nbsp;Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

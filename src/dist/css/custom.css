@@ -53,11 +53,13 @@ section[id] {
     background: #fafafa;
 }
 
-.pub-card .title a {
-    color: inherit;
+.pub-card .title a,
+.pub-card .title a:visited {
+    color: #000;
 }
 
 .pub-card .title a:hover {
+    color: #000;
     text-decoration: underline;
 }
 
@@ -69,12 +71,13 @@ section[id] {
     margin-top: 0.75rem;
 }
 
-.inline-link {
-    color: #2b6cb0;
-    border-bottom: 1px solid rgba(43, 108, 176, 0.35);
+.inline-link,
+.inline-link:visited {
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 
 .inline-link:hover {
-    color: #1a4f8b;
-    border-bottom-color: currentColor;
+    color: #000;
+    border-bottom-color: #000;
 }

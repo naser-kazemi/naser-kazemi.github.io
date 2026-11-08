@@ -37,46 +37,6 @@ section[id] {
     margin-top: 1.5rem;
 }
 
-
-
-
-.pub-list li {
-    margin-bottom: 1rem;
-}
-
-.two-col {
-    columns: 2;
-}
-
-@media screen and (max-width: 768px) {
-    .two-col {
-        columns: 1;
-    }
-}
-
-.hobby {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.hobby-icon {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: #f0f0f5;
-    color: #363636;
-    font-size: 1.4rem;
-}
-
-.hobby .title {
-    margin-bottom: 0.4rem;
-}
-
 .footer-links {
     display: flex;
     flex-wrap: wrap;
